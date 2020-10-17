@@ -57,53 +57,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="201" id="ll9-Cg-JlC" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="201"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="120" id="ll9-Cg-JlC" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ll9-Cg-JlC" id="Hjy-2I-kC3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcy-Fy-uVD">
-                                            <rect key="frame" x="8" y="11" width="90" height="167"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCy-Kj-kVq">
+                                            <rect key="frame" x="16" y="11" width="65" height="65"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="65" id="5YY-ch-Hkh"/>
-                                                <constraint firstAttribute="width" constant="65" id="90R-fr-jDh"/>
+                                                <constraint firstAttribute="height" constant="65" id="HCW-ix-2Ij"/>
+                                                <constraint firstAttribute="width" constant="65" id="MIe-QA-Bbu"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL4-8C-V5z">
-                                            <rect key="frame" x="106" y="19" width="81" height="22"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="22" id="7ZL-Ow-TQy"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex5-Zy-Kcw">
+                                            <rect key="frame" x="89" y="11" width="81" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-cW-3gY">
-                                            <rect key="frame" x="106" y="49" width="229" height="129"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAq-mj-cuJ">
+                                            <rect key="frame" x="89" y="37" width="270" height="72"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="wcy-Fy-uVD" secondAttribute="bottom" id="4lG-X9-AIP"/>
-                                        <constraint firstItem="t9h-cW-3gY" firstAttribute="leading" secondItem="wcy-Fy-uVD" secondAttribute="trailing" constant="8" id="6mU-P2-aYz"/>
-                                        <constraint firstItem="t9h-cW-3gY" firstAttribute="top" secondItem="tL4-8C-V5z" secondAttribute="bottom" constant="4" id="8Nl-0h-Mle"/>
-                                        <constraint firstItem="tL4-8C-V5z" firstAttribute="top" secondItem="Hjy-2I-kC3" secondAttribute="topMargin" id="9k2-9s-0JD"/>
-                                        <constraint firstItem="t9h-cW-3gY" firstAttribute="bottom" secondItem="Hjy-2I-kC3" secondAttribute="bottomMargin" id="XWw-5A-5wy"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="wcy-Fy-uVD" secondAttribute="trailing" constant="237" id="YcU-3l-wcx"/>
-                                        <constraint firstItem="wcy-Fy-uVD" firstAttribute="top" secondItem="Hjy-2I-kC3" secondAttribute="top" id="bLj-JI-YB1"/>
-                                        <constraint firstItem="t9h-cW-3gY" firstAttribute="trailing" secondItem="Hjy-2I-kC3" secondAttribute="trailingMargin" id="kSo-lN-TnY"/>
-                                        <constraint firstItem="wcy-Fy-uVD" firstAttribute="leading" secondItem="Hjy-2I-kC3" secondAttribute="leadingMargin" id="rd6-Ya-zmm"/>
-                                        <constraint firstItem="tL4-8C-V5z" firstAttribute="leading" secondItem="wcy-Fy-uVD" secondAttribute="trailing" constant="8" id="ryf-A6-FEv"/>
+                                        <constraint firstItem="TCy-Kj-kVq" firstAttribute="top" secondItem="Hjy-2I-kC3" secondAttribute="topMargin" id="0K6-49-9iF"/>
+                                        <constraint firstItem="TCy-Kj-kVq" firstAttribute="leading" secondItem="Hjy-2I-kC3" secondAttribute="leadingMargin" id="2Q5-CN-303"/>
+                                        <constraint firstItem="ex5-Zy-Kcw" firstAttribute="leading" secondItem="TCy-Kj-kVq" secondAttribute="trailing" constant="8" id="8xA-S8-sVu"/>
+                                        <constraint firstItem="ex5-Zy-Kcw" firstAttribute="top" secondItem="Hjy-2I-kC3" secondAttribute="topMargin" id="BgW-1J-uBK"/>
+                                        <constraint firstItem="JAq-mj-cuJ" firstAttribute="top" secondItem="ex5-Zy-Kcw" secondAttribute="bottom" constant="4" id="Xgy-C1-F7I"/>
+                                        <constraint firstItem="JAq-mj-cuJ" firstAttribute="trailing" secondItem="Hjy-2I-kC3" secondAttribute="trailingMargin" id="m5L-gM-iaX"/>
+                                        <constraint firstItem="JAq-mj-cuJ" firstAttribute="leading" secondItem="TCy-Kj-kVq" secondAttribute="trailing" constant="8" id="uz2-E2-Jds"/>
+                                        <constraint firstItem="JAq-mj-cuJ" firstAttribute="bottom" secondItem="Hjy-2I-kC3" secondAttribute="bottomMargin" id="wcD-91-Y7f"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="profileImageView" destination="wcy-Fy-uVD" id="O0q-mC-69w"/>
-                                    <outlet property="tweetContent" destination="t9h-cW-3gY" id="2xE-0r-fvG"/>
-                                    <outlet property="userNameLabel" destination="tL4-8C-V5z" id="F5d-Hd-LeE"/>
+                                    <outlet property="profileImageView" destination="TCy-Kj-kVq" id="WqO-Om-9sw"/>
+                                    <outlet property="tweetContent" destination="JAq-mj-cuJ" id="bRo-XB-Voa"/>
+                                    <outlet property="userNameLabel" destination="ex5-Zy-Kcw" id="21b-sx-NEa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
